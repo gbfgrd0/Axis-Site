@@ -1,0 +1,132 @@
+@media (max-width:1000px){
+    html{
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    header{
+        height: 10vh;
+    }
+
+    header img {
+        height: 50%;
+        margin-left: 5vw;
+    }
+    
+    header ul{
+        display: none;
+    }
+
+    header .material-symbols-outlined{
+        color: white;
+        display: flex !important;
+        position: fixed;
+        right: 4vw;
+        font-size:1.5rem !important;
+    }
+
+    /* Page 2 */
+
+    main #page2{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    main #page2 #imagemTime{
+        height: 40%;
+    }
+    
+    main #page2 div{
+        width: 100%;
+    }
+
+    main #page2 div h3 {
+        font-size: 1.6rem;
+    }
+
+    main #page2 div p{
+        font-size: 0.8rem;
+        margin-bottom: 5vh;
+    }
+
+    /* Page 3 */
+
+    main #page3{
+        height: 50vh;
+    }
+
+    main #page3 div {
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    main #page3 div p{
+        font-size: 0.8rem;
+    }
+
+    /* Page 4 */
+
+    .nome-accordion{
+        display: none;
+    }
+
+    .img-accordion:hover {
+        min-width: 100%;
+    }
+
+    .img-accordion:hover .nome-accordion{
+        display: flex;
+    }
+
+    /* Page 5 */
+
+    main #page5 h2{
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    main #page5 #imgPrincipal{
+        height: 50%;
+    }
+
+    /* Page 6 */
+    main #page6 .list-img-m{
+        background-color: blue;
+    }
+
+    main #page6 .img-m-container {
+        background-color: red;
+    }
+
+    main #page6 .img-m{
+        width: 100vw;
+    }
+
+    /* Page 7 */
+
+    main #page7 h2{
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+
+    main #page7 .fileiraIcons{
+        width: 80%;
+    }
+
+    main #page7 .fileiraIcons a img{
+        min-width: 7vw;
+    }
+
+    main #page7 h3{
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    main #page7 p{
+        font-size: 0.7rem;
+        width: 80%;
+    }
+}

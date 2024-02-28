@@ -1,0 +1,441 @@
+/* Variáveis Globais */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html::-webkit-scrollbar {
+    width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #e4e4e44b;
+}
+
+html::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: #B4CC04;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #141414;
+}
+
+
+/* Header */
+header {
+    height: 15vh;
+    width: 100vw;
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+.material-symbols-outlined{
+    display: none !important;
+}
+
+header img {
+    height: 80%;
+    margin-left: 5vw;
+}
+
+header ul {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: 5vw;
+    position: fixed;
+    right: 10vw;
+}
+
+header ul li {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    transition: 0.4s ease-in-out;
+}
+
+header ul .selected {
+    border-bottom: 1px solid #B4CC04;
+    padding-bottom: 1px;
+    transition: 0.4s ease-in-out;
+    color: #B4CC04;
+
+}
+
+header ul li:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    color: #B4CC04;
+}
+
+header ul .selected:hover {
+    border-bottom: 1px solid #B4CC04;
+}
+
+/* Page 1 */
+
+main #page1 {
+    background-image: url('../images/carro-pr.gif');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Page 2 */
+
+main #page2 {
+    margin-top: 5vh;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main #page2 #imagemTime {
+    height: 100%;
+    -webkit-mask-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+}
+
+main #page2 div {
+    width: 60%;
+    display: flex;
+    padding: 3vw;
+    flex-direction: column;
+}
+
+main #page2 div h3 {
+    color: #B4CC04;
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-bottom: 4vh;
+}
+
+main #page2 div p {
+    color: white;
+    font-size: 1.3rem;
+    max-width: 90%;
+    text-align: left;
+    font-weight: 100;
+}
+
+/* Page 3 */
+
+main #page3 {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #page3 div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+main #page3 div p {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1vh;
+    font-weight: 100;
+}
+
+main #page3 div p:first-child {
+    margin-bottom: 1vh;
+}
+
+main #page3 div h3 {
+    font-size: 4rem;
+    color: white;
+}
+
+/* Page 4 */
+
+main #page4 {
+    margin-top: 10vh;
+    background-color: #282828;
+    height: 65vh;
+    width: 100vw;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.img-accordion {
+    flex: 1;
+    height: 100%;
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.nome-accordion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 110%;
+    color: rgb(30, 30, 30);
+    background-color: rgba(190, 190, 190, 0.9);
+    transform-origin: 0% 0%;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transform: translateY(-5vh);
+}
+
+.titulo-accordion {
+    position: absolute;
+    bottom: -8%;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 70%;
+    color: rgb(30, 30, 30);
+    background-color: rgba(190, 190, 190, 0.9);
+    transform-origin: 0% 0%;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    white-space: nowrap;
+    transform: translateY(-5vh);
+    opacity: 0;
+}
+
+.img-accordion:hover {
+    flex: 1.5;
+    filter: brightness(105%);
+    -webkit-filter: brightness(105%);
+}
+
+.img-accordion:hover p {
+    background-color: rgba(90, 90, 90, 1);
+    opacity: 1;
+    color: #b4cc04;
+    transform: scale(1.5) translateY(-5vh);
+}
+
+.img1 {
+    background-image: url(/images/ian.png);
+}
+
+.img2 {
+    background-image: url(/images/matheus.png);
+}
+
+.img3 {
+    background-image: url(/images/paulo.png);
+}
+
+.img4 {
+    background-image: url(/images/emannuel.png);
+}
+
+.img5 {
+    background-image: url(/images/pedro.png);
+}
+
+/* Page 5 */
+
+main #page5 {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vh 0 10vh 0;
+}
+
+main #page5 h2 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+main #page5 #imgPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 35vh;
+    margin-top: 10vh;
+}
+
+main #page5 #imgPrincipal img {
+    height: 100%;
+    filter: brightness(0%) invert(100%);
+    -webkit-filter: brightness(0%) invert(100%);
+    transition: filter 0.5s ease;
+    -webkit-transition: filter 0.5s ease;
+    -moz-transition: filter 0.5s ease;
+    -ms-transition: filter 0.5s ease;
+    -o-transition: filter 0.5s ease;
+}
+
+main #page5 #imgPrincipal img:hover {
+    filter: brightness(100%) invert(0%);
+    -webkit-filter: brightness(100%) invert(0%);
+}
+
+main #page5 .imgCollection {
+    width: 80vw;
+    margin-top: 5vh;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+main #page5 .imgCollection a {
+    width: 20%;
+    height: 100%;
+}
+
+main #page5 .imgCollection a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0%) invert(100%);
+    -webkit-filter: brightness(0%) invert(100%);
+    transition: filter 0.5s ease;
+    -webkit-transition: filter 0.5s ease;
+    -moz-transition: filter 0.5s ease;
+    -ms-transition: filter 0.5s ease;
+    -o-transition: filter 0.5s ease;
+}
+
+main #page5 .imgCollection a img:hover {
+    filter: brightness(100%) invert(0%);
+    -webkit-filter: brightness(100%) invert(0%);
+}
+
+/* Página 6 */
+
+main #page6 {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    overflow: hidden;
+    padding-top: 10vh;
+}
+
+main #page6 .list-img-m {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    height: 30vh;
+}
+
+main #page6 .img-m-container {
+    overflow: hidden;
+    width: 25vw;
+    height: auto;
+    max-height: 110%;
+}
+
+main #page6 .img-m {
+    width: 100%;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+
+main #page6 .img-m:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transform-origin: center center;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+}
+
+/* Página 7 / Footer */
+
+main #page7{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+}
+
+main #page7 h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+}
+
+main #page7 .fileiraIcons{
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    justify-content: space-around;
+    margin-bottom: 3vh;
+}
+
+main #page7 h3{
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 5vh;
+}
+
+main #page7 p{
+    font-size: 1rem;
+    width: 40%;
+    color: rgba(128, 128, 128, 0.171);
+    padding-bottom: 3vh;
+}
