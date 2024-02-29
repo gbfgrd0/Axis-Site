@@ -44,7 +44,7 @@ header {
     z-index: 10000;
 }
 
-.material-symbols-outlined{
+#menuIcon{
     display: none !important;
 }
 
@@ -89,6 +89,33 @@ header ul li:hover {
 
 header ul .selected:hover {
     border-bottom: 1px solid #B4CC04;
+}
+
+#menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: #212121;
+    z-index: 100000;
+    position: fixed;
+    top: 0;
+    display: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#menu ul{
+    list-style: none;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10vw;
+}
+
+#menu ul a{
+    color: white;
 }
 
 /* Page 1 */
