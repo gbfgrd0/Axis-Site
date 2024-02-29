@@ -98,7 +98,7 @@ header ul .selected:hover {
     z-index: 100000;
     position: fixed;
     top: 0;
-    display: hidden;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: start;
