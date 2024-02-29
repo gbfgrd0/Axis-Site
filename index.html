@@ -26,6 +26,17 @@
 </head>
 
 <body>
+    <div id="menu">
+        <span class="material-symbols-outlined" id="closeIcon" onclick="closeMenu()">close</span>
+        <ul>
+            <a href="#page1" onclick="closeMenu()"><li class="selected">Início</li></a>
+            <a href="#page2" onclick="closeMenu()"><li>Sobre</li></a>
+            <a href="#page4" onclick="closeMenu()"><li>Equipe</li></a>
+            <a href="#page5" onclick="closeMenu()"><li>Patrocinadores</li></a>
+            <a href="#page6" onclick="closeMenu()"><li>Contato</li></a>
+        </ul>
+    </div>
+
     <header>
         <img src="./images/axislogonew.png" alt="axisLogo">
         <ul>
@@ -35,7 +46,7 @@
             <a href="#page5"><li>Patrocinadores</li></a>
             <a href="#page6"><li>Contato</li></a>
         </ul>
-        <span class="material-symbols-outlined">menu</span>
+        <span class="material-symbols-outlined" id="menuIcon" onclick="openMenu()">menu</span>
     </header>
     <main>
         <div id="page1"></div>
@@ -152,6 +163,7 @@
         </div>
     </main>
 
+    <script src="./script.js"></script>
     <script>
         ScrollReveal({
             reset: true,
